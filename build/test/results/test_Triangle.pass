@@ -1,0 +1,39 @@
+---
+:source:
+  :path: test
+  :file: test_Triangle.c
+:successes:
+- :test: test_getTriangleName_given_2_2_3_should_return_isoscales
+  :line: 11
+  :message: ''
+- :test: test_getTriangleName_given_2_3_3_should_return_isoscales
+  :line: 19
+  :message: ''
+- :test: test_getTriangleName_given_3_2_3_should_return_isoscales
+  :line: 27
+  :message: ''
+- :test: test_getTriangleName_given_1_2_3_should_return_scalene
+  :line: 36
+  :message: ''
+- :test: test_getTraingleName_given_3_3_3_should_return_equilateral
+  :line: 45
+  :message: ''
+- :test: test_getTraingleName_given_1_1_3_should_return_invalid
+  :line: 53
+  :message: ''
+- :test: test_areLengthAllStictlyPositive_given_0_4_3_should_throw_exception
+  :line: 63
+  :message: ''
+- :test: test_areLengthAllStictlyPositive_given_2_4_3_should_not_throw_exception
+  :line: 76
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 8
+  :passed: 8
+  :failed: 0
+  :ignored: 0
+:stdout:
+- 'Success: Exception generated. Error code: 1.'
+- 'Success: No exception generated.'
