@@ -84,20 +84,29 @@ void test_areLengthAllStictlyPositive_given_2_4_3_should_not_throw_exception(voi
 	}	
 }
 
- //void test_areLengthAllStictlyPositive_given_3_4_8_should_throw_exception(void) {
+void test_isTriangleNotValid_given_3_4_8_should_throw_exception(void) {
 
-  //CEXCEPTION_T  err;
-  //Try{
-  //    test_areLengthAllStictlyPositive(3,4,8) ;
-	//  TEST_FAIL_MESSAGE("Should generate an expection due NoCorrect Side of triangle\n")
-	//}Catch (err){
-	//TEST_ASSERT_EQUAL( ERR_NOT_TRIANGLE, err);
-//	printf("Sucess: Expection generated, Error code: %d.\n", err);
-	//}
+  CEXCEPTION_T  err;
+  Try{
+     isTriangleNotValid(3,4,8) ;
+	  TEST_FAIL_MESSAGE("Should generate an expection due NoCorrect Side of triangle\n")
+	}Catch (err){
+	TEST_ASSERT_EQUAL( ERR_NOT_TRIANGLE, err);
+	printf("Sucess: Expection generated, Error code: %d.\n", err);
+	}
 	
-  // }
+ }
 
+void test_isTriangleNotValid_given_3_5_3_should_not_throw_exception(void) {
 
+    CEXCEPTION_T	err;
+	Try {
+		isTriangleNotValid(3,5,3) ;
+		printf("Success: No exception generated.\n");
+	} Catch(err) {
+		TEST_FAIL_MESSAGE("Do not expect exception to be generated.")	
+	}	
+}
 
 
 
