@@ -27,9 +27,9 @@ int areLengthAllStictlyPositive(int side1, int side2, int side3){
 	
 }
 
-//int areLengthAllStictlyPositive(int side1, int side2, int side3){
+int isTriangleNotValid(int side1, int side2, int side3){
 
- // if ( (side1 + side2 <=side3 ) || (side2 + side3 <=side1 ) || (side1 + side3 <=side2 )  )
-  // Throw(ERR_NOT_TRIANGLE);
+ if ( (side1 + side2 <=side3 ) | (side2 + side3 <=side1 ) | (side1 + side3 <=side2 )  )
+   Throw(ERR_NOT_TRIANGLE);
    
-  // }
+   }
